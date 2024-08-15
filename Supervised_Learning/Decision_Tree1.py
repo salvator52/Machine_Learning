@@ -28,8 +28,8 @@ print(accuracy_score(y_test, y_pred))
 
 #tree göstermek için from sklearn.tree import plot_tree kullanırız
 plt.figure(figsize=(15,10)) #figürü çoz uzakta çıkarmamak için 
-#filled node'ları doldurmaya izin vermesi için neyle peki o da feature names parametresine verdiğimiz giridyle
-#class names ise yapraklarda  yani en son ki node'larda gösterilecek şeyleri verir
+#filled= node'ları doldurmaya izin vermesi için neyle peki o da feature names parametresine verdiğimiz giridyle
+#class names=  yapraklarda  yani en son ki node'larda gösterilecek şeyleri verir
 #feature names ve class name liste şeklinde gönderilmelidir
 plot_tree(tree_clf,filled =True,feature_names=iris.feature_names,class_names=list(iris.target_names))
 plt.show()
