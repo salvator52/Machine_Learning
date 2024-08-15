@@ -2,15 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-
-
 #veri oluştur
 X = np.random.rand(100,1) #100 satır tek sütundan oluşan bir nd array
 y = 3 + 4 * X +np.random.rand(100,1) #y=3+4x olsun
-
-
-
-
 
 lin_reg = LinearRegression()
 lin_reg.fit(X, y)
