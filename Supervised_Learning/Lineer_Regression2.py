@@ -29,8 +29,5 @@ diabet_y_pred = lin_reg.predict(diabet_X_test)
 mse = mean_squared_error(diabet_y_test,diabet_y_pred)
 r2 = r2_score(diabet_y_test,diabet_y_pred)
 
-
-
-
 plt.scatter(diabet_X_test,diabet_y_test,color="black")
 plt.plot(diabet_X_test,diabet_y_pred,color="blue")
