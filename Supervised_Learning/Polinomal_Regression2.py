@@ -8,7 +8,7 @@ y = 2 + 3* X**2 +np.random.rand(100,1) #gürültü ekledik
 #plt.scatter(X,y)
 
 poly_feat = PolynomialFeatures(degree = 2)
-X_poly = poly_feat.fit_transform(X) # burada pythonun plonim fonksiyonundan yardım aldık 
+X_poly = poly_feat.fit_transform(X) # burada pythonun polinom fonksiyonundan yardım aldık 
 
 
 lin_reg = LinearRegression()
