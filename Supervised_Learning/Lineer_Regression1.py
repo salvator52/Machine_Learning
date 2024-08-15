@@ -17,7 +17,7 @@ plt.ylabel("y değeri")
 plt.title("lineer regresyon")
 
 a1 = lin_reg.coef_[0][0] #x'in katsayısı
-a0 = lin_reg.intercept_[0] #sabitin katsayısını alırız
+a0 = lin_reg.intercept_[0] #sabitin değeri
 
 for i in range(100):
     y_ =a0 + a1 * X
