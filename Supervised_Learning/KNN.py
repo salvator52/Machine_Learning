@@ -19,7 +19,7 @@ df["target"] = cancer.target
 X = cancer.data #features
 y = cancer.target #target
 
-#train ve tes diye ayırma kısmımız
+#train ve test diye ayırma kısmımız
 #test_size 100 de kaç test kısmına ayrılcak ona bakıcaz
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.3,random_state=42)
 
@@ -51,10 +51,7 @@ accuracy_values = []
 k_values = []
 
 for k in range(1,21):
-    knn
-    
-    
-    = KNeighborsClassifier(n_neighbors=k)
+    knn= KNeighborsClassifier(n_neighbors=k)
     knn.fit(X_train, y_train)
     y_pred = knn.predict(X_test)
     accuracy = accuracy_score(y_test,y_pred)
