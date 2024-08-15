@@ -73,25 +73,3 @@ for pairidx, pair in enumerate(feature_pairs):
 
 plt.legend()
 plt.show()
-
-
-
-
-
-
-
-#BU KISIM MATPLOTLIB çalışmam lazım
-
-
-
-
-
-
-
-
-
-
-
-
-
-
